@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <link href="https://wildfly.org//feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://wildfly.org//" rel="alternate" type="text/html" />
+  <updated>2022-07-07T16:02:05+00:00</updated>
+  <id>https://wildfly.org/</id>
+
+  
+  
+    <title type="html">WildFly</title>
+  
+
+  
+    <entry>
+      <title type="html">Vlog: Encrypting a Filesystem Realm</title>
+      <link href="https://www.youtube.com/watch?v=1K92tit2uCk" rel="alternate" type="text/html" title="Vlog: Encrypting a Filesystem Realm" />
+      <published>2022-07-07T00:00:00+00:00</published>
+      <updated>2022-07-07T00:00:00+00:00</updated>
+      <id>https://www.youtube.com/watch?v=1K92tit2uCk</id>
+      
+      
+        <content type="html" xml:base="https://www.youtube.com/watch?v=1K92tit2uCk"></content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+        <name>araskar</name>
+        
+        
+      </author>
+
+      
+        
+      
+
+      
+        <category term="filesystem-realm" />
+      
+        <category term="encryption" />
+      
+
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">WildFly 26 is released!</title>
+      <link href="https://wildfly.org//news/2021/12/16/WildFly26-Final-Released/" rel="alternate" type="text/html" title="WildFly 26 is released!" />
+      <published>2021-12-16T00:00:00+00:00</published>
+      <updated>2021-12-16T00:00:00+00:00</updated>
+      <id>https://wildfly.org//news/2021/12/16/WildFly26-Final-Released</id>
+      
+      
+        <content type="html" xml:base="https://wildfly.org//news/2021/12/16/WildFly26-Final-Released/">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m pleased to announce that the WildFly 26 Final zip is now available &lt;a href=&quot;https://wildfly.org/downloads&quot;&gt;for download&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;(Note that the release may not be available yet on Maven Central; please &lt;a href=&quot;#maven-availability&quot;&gt;Maven Availability&lt;/a&gt; below for more details.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There are number of new things in this release:&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;wildfly-preview-and-microprofile-platform-5&quot;&gt;WildFly Preview and MicroProfile Platform 5&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Last week the MicroProfile group announced the release of the &lt;a href=&quot;https://microprofile.io/2021/12/07/microprofile-5-0-release/&quot;&gt;MicroProfile 5.0 platform&lt;/a&gt;. Thanks and congratulations to the MicroProfile community!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;MicroProfile 5.0 is mainly focused on updating APIs and dependencies from the use of Jakarta EE 8 and the javax.* namespace to EE 9.1 and the jakarta.* namespace.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As I &lt;a href=&quot;https://www.wildfly.org/news/2020/11/12/Jakarta-EE-9-with-WildFly-Preview/&quot;&gt;announced when we released WildFly 22 Alpha1&lt;/a&gt;, along with our traditional Jakarta EE 8 distribution we want to give our users a preview of what will be coming in WildFly as we move on to EE 9 and later. We call this distribution &quot;WildFly Preview&quot;. The WildFly 26.0.0.Final release includes an update to WildFly Preview. The current focus of WildFly Preview is on showcasing our efforts toward using the jakarta.* namespace and eventual Jakarta EE 10 support, so in the WildFly Preview 26 release we wanted to take advantage of the new developments in MicroProfile by demonstrating compatibility with MicroProfile 5.0. I&amp;#8217;m very pleased to be able to say that WildFly Preview 26 is a compatible implementation of MicroProfile 5.0!  Evidence supporting our certification is available &lt;a href=&quot;https://github.com/wildfly/certifications/blob/MP5.0/WildFly_Preview_26.0.0.Final/microprofile-5.0/microprofile-full-platform.adoc#tck-results&quot;&gt;on the WildFly certifications site&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;My thanks to the MicroProfile working group for their efforts in getting MicroProfile 5.0 released, and to WildFly contributors Kabir Khan, Martin Stefanko and James Perkins for their hard work on integration of the 5.0 spec APIs and TCKs and on testing compliance.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To learn more about WildFly Preview, see the &lt;a href=&quot;https://docs.wildfly.org/26/WildFly_and_WildFly_Preview.html&quot;&gt;WildFly and WildFly Preview doc page&lt;/a&gt;. Please note that &lt;em&gt;even though WildFly Preview 26 is coming from a .Final tag of the WildFly codebase, WildFly Preview should always be regarded as a tech-preview/beta distribution.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;cloud-configuration&quot;&gt;Cloud Configuration&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;WildFly now supports &lt;a href=&quot;https://github.com/wildfly/wildfly-proposals/blob/main/management/WFCORE-5489_override_attribute_value_from_env_var.adoc&quot;&gt;overriding the value of simple management attributes with environment variables&lt;/a&gt;. This allows you to tailor a huge range of settings to your runtime environment without needing to use multiple different configuration files for different environments or modify a common configuration file to add a lot of configuration expressions. This kind of configuration overriding can be useful anywhere, but particularly in cloud environments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To override the value of a simple attribute of a management resource, you can specify an environment variable with the following conversion mapping:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Take the address of the resource.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove the leading slash (&lt;code&gt;/&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Append &lt;strong&gt;two underscores&lt;/strong&gt; (&lt;code&gt;__&lt;/code&gt;) and the name of the attribute.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Replace all non-alphanumeric characters with an underscore (&lt;code&gt;_&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Transform to upper case.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For example, to set the value of the &lt;code&gt;proxy-address-forwarding&lt;/code&gt; attribute to &lt;code&gt;true&lt;/code&gt; on the &lt;code&gt;/subsystem=undertow/server=default-server/http-listener=default&lt;/code&gt; resource, you can use the following environment variable:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export SUBSYSTEM_UNDERTOW_SERVER_DEFAULT_SERVER_HTTP_LISTENER_DEFAULT__PROXY_ADDRESS_FORWARDING=true&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This feature is not activated by default. To activate this feature, you must set the &lt;code&gt;WILDFLY_OVERRIDING_ENV_VARS&lt;/code&gt; environment variable on your target platform:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export WILDFLY_OVERRIDING_ENV_VARS=1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;other-new-features&quot;&gt;Other New Features&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The Elytron subsystem has added a new &lt;a href=&quot;https://github.com/wildfly/wildfly-proposals/blob/main/elytron/WFCORE-5483-custom-loginmodule-compatible-sec-realm.adoc&quot;&gt;JAAS security realm type&lt;/a&gt;. The JAAS security realm can be used to configure custom Login Modules in the Elytron subsystem to use for credential verification.
+This is done by initializing and using a LoginContext from a provided JAAS configuration file to verify user&amp;#8217;s credentials.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A WildFly domain mode &lt;code&gt;Host Controller&lt;/code&gt; can now &lt;a href=&quot;https://github.com/wildfly/wildfly-proposals/blob/main/core/WFCORE-2806_Enable_resolution_of_standard_server_system_properties_on_domain_mode.adoc&quot;&gt;resolve standard server system properties&lt;/a&gt; when launching a managed server JVM. This makes it easier to configure shared server JVM settings at the domain, server-group or host level, while still having those settings incorporate server-specific path values. This is useful for things like adding GC logging to the server launch command, where the setting needs to include a server-specific location to write the log file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/wildfly/quickstart/tree/26.0.0.Final/microprofile-reactive-messaging-kafka&quot;&gt;MicroProfile Reactive Messaging quickstart&lt;/a&gt; has been enhanced to &lt;a href=&quot;https://github.com/wildfly/wildfly-proposals/blob/main/microprofile/WFLY-14800-MicroProfile_Reactive_Messaging_QuickStart_Update_For_2.0.adoc&quot;&gt;demonstrate new capabilities that came with our integration of MicroProfile Reactive Messaging 2.0&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;compatibility-notes&quot;&gt;Compatibility Notes&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There are a couple of compatibility topics that I want to highlight:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To build a &lt;a href=&quot;https://docs.wildfly.org/bootablejar/&quot;&gt;Bootable JAR&lt;/a&gt; with WildFly 26, you will need to upgrade the &lt;a href=&quot;https://github.com/wildfly-extras/wildfly-jar-maven-plugin&quot;&gt;Bootable JAR Maven plugin&lt;/a&gt; to the 6.1.1.Final or later release, preferably to &lt;a href=&quot;https://repository.jboss.org/org/wildfly/plugins/wildfly-jar-maven-plugin/7.0.0.Final/&quot;&gt;7.0.0.Final&lt;/a&gt;. The need to upgrade is a result of an important &lt;a href=&quot;https://github.com/wildfly-extras/wildfly-jar-maven-plugin/issues/285&quot;&gt;improvement in how the plugin can handle certain updates&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some developers may be accustomed to exposing the H2 database web console during development work by adding servlets provided by WildFly&amp;#8217;s &lt;code&gt;com.h2database.h2&lt;/code&gt; module in an application deployment. In WildFly 26 this &lt;a href=&quot;https://issues.redhat.com/browse/WFLY-14814&quot;&gt;no longer works out of the box&lt;/a&gt;. In standard WildFly (but not WildFly Preview), the ability to do this can be restored by following the &lt;a href=&quot;https://docs.wildfly.org/26/Developer_Guide.html#h2-web-console&quot;&gt;instructions in the WildFly 26 documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;java-se-support&quot;&gt;Java SE Support&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can run WildFly 26 or WildFly Preview 26 on any of the long-term support Java SE releases, including Java SE 17. We&amp;#8217;ve tested WildFly heavily on Java SE 8, Java SE 11 and Java SE 17. Our testing included testing WildFly Preview on SE 17 with the massive Jakarta EE 9.1 TCK. (More on that in the 'Standards Support' section below.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The most heavily tested SE options for WildFly are still SE 11 and SE 8, because both WildFly and its component library projects have so many years of testing on those versions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As I noted in September&amp;#8217;s &lt;a href=&quot;https://www.wildfly.org/news/2021/09/27/WildFly-Changes/&quot;&gt;Changes are coming to WildFly post&lt;/a&gt;, it is likely that WildFly will drop support for SE 8 in one of the next few releases. Eventually the transition to Jakarta EE 10 support and the expected minimum requirement for SE 11 by some of its API projects will drive WildFly to only support SE 11 or later. Early next year we&amp;#8217;re aiming to nail down plans for when that will happen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Please note that WildFly runs on Java 11 and later in classpath mode.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;running-wildfly-with-se-17&quot;&gt;Running WildFly with SE 17&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Because SE 17 is probably new to a great many WildFly users, I decided to copy over over this next bit from the WildFly 25 release announcement.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;One of the key differences in SE 17 versus the previous LTS SE 11 release is that the JVM will reject reflective access calls that SE 11 would only warn about, unless the JVM launch command includes JPMS configuration options to allow that access. WildFly does quite a bit of deep reflection, so part of our efforts in recent releases has been to identify the necessary JPMS settings. We have added those to our standard launch scripts, so WildFly should just work if you&amp;#8217;re using those. The manifest file in a WildFly bootable jar will also include these settings. But some users may not be using a bootable jar or using our launch scripts to launch WildFly. For example many users use IDEs to launch WildFly and count on the IDE to provide arguments to the JVM. And IDEs may not be using the necessary settings yet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are launching a WildFly instance on SE 17 and aren&amp;#8217;t using a bootable jar or our launch scripts, here are the JPMS settings you will need:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;--add-exports=java.desktop/sun.awt=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;--add-opens=java.base/java.lang=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;--add-opens=java.base/java.lang.invoke=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;--add-opens=java.base/java.lang.reflect=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;--add-opens=java.base/java.io=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;--add-opens=java.base/java.security=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;--add-opens=java.base/java.util=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;--add-opens=java.base/java.util.concurrent=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;--add-opens=java.management/javax.management=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;--add-opens=java.naming/javax.naming=ALL-UNNAMED&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Not all uses of the server will require all of those; the &lt;a href=&quot;https://github.com/wildfly/wildfly-core/blob/18.0.0.Final/core-feature-pack/common/src/main/resources/content/bin/common.sh#L24-L48&quot;&gt;launch script sections&lt;/a&gt; that set those up include comments describing the main reason we&amp;#8217;ve added each.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It&amp;#8217;s possible your application may do something that requires additional JPMS settings; if so you can add those to the JVM launch command by editing the &lt;code&gt;bin/standalone.conf&lt;/code&gt; or &lt;code&gt;bin/domain.conf&lt;/code&gt; file or their .bat or .ps1 variants.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;standards-support&quot;&gt;Standards Support&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The standard WildFly 26.0.0 distribution is a Jakarta EE 8 compatible implementation, compatible with both the Full Platform and the Web Profile. Evidence supporting our certification is available &lt;a href=&quot;https://github.com/wildfly/certifications/blob/EE8/WildFly_26.0.0.Final/jakarta-full-platform.adoc#tck-results&quot;&gt;for the Full Platform&lt;/a&gt; and &lt;a href=&quot;https://github.com/wildfly/certifications/blob/EE8/WildFly_26.0.0.Final/jakarta-web-profile.adoc#tck-results&quot;&gt;for the Web Profile&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The standard WildFly 26 distribution is also a compliant implementation of the MicroProfile 4.1 platform specification. This has been   &lt;a href=&quot;https://github.com/wildfly/certifications/blob/MP4.1/WildFly_26.0.0.Final/microprofile-4.1/microprofile-full-platform.adoc#tck-results&quot;&gt;demonstrated on SE 8, SE 11 and SE 17&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The WildFly Preview distribution released today is a compatible implementation of both the Jakarta EE 9.1 Web Profile and the Full Platform.  WildFly Preview has been able to demonstrate compatibility while running on both Java SE 11 and on Java SE 17. Evidence supporting our certification is available &lt;a href=&quot;https://github.com/wildfly/certifications/blob/EE9.1/WildFly_Preview_26.0.0.Final/jakarta-full-platform-jdk11.adoc#tck-results&quot;&gt;for the Full Platform on SE 11&lt;/a&gt;,  &lt;a href=&quot;https://github.com/wildfly/certifications/blob/EE9.1/WildFly_Preview_26.0.0.Final/jakarta-web-profile-jdk11.adoc#tck-results&quot;&gt;for the Web Profile on SE 11&lt;/a&gt;,  &lt;a href=&quot;https://github.com/wildfly/certifications/blob/EE9.1/WildFly_Preview_26.0.0.Final/jakarta-full-platform-jdk17.adoc#tck-results&quot;&gt;for the Full Platform on SE 17&lt;/a&gt; and  &lt;a href=&quot;https://github.com/wildfly/certifications/blob/EE9.1/WildFly_Preview_26.0.0.Final/jakarta-web-profile-jdk17.adoc#tck-results&quot;&gt;for the Web Profile on SE 17&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As discussed above the WildFly Preview 26 distribution is a compliant implementation of the MicroProfile 5.0 platform specification. This, too, has been   &lt;a href=&quot;https://github.com/wildfly/certifications/blob/MP5.0/WildFly_Preview_26.0.0.Final/microprofile-5.0/microprofile-full-platform.adoc#tck-results&quot;&gt;demonstrated on SE 8, SE 11 and SE 17&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;upcoming-changes&quot;&gt;Upcoming Changes&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;WildFly 26 was the second in a series of a few releases where we&amp;#8217;re expecting to make some big changes in the server. I encourage you to have a look at the &lt;a href=&quot;https://www.wildfly.org/news/2021/09/27/WildFly-Changes/&quot;&gt;Changes are coming to WildFly post&lt;/a&gt; that I mentioned above.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;maven-availability&quot;&gt;Maven Availability&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As of the time I&amp;#8217;m writing this, we&amp;#8217;ve been experiencing issues with syncing artifacts initially deployed to the &lt;a href=&quot;https://repository.jboss.org/nexus/&quot;&gt;JBoss.org Nexus&lt;/a&gt; installation to Maven Central. This has affected WildFly 26 and a number of its component projects, so until this is resolved you may not find the WildFly 26 artifacts on Maven Central.
+The Maven repository url to use to pull WildFly from JBoss.org nexus is &lt;a href=&quot;https://repository.jboss.org/nexus/content/groups/public/&quot; class=&quot;bare&quot;&gt;https://repository.jboss.org/nexus/content/groups/public/&lt;/a&gt;. The repository is easily accessed via a browser as well; for example the &lt;code&gt;wildfly-dist&lt;/code&gt; artifacts can be found &lt;a href=&quot;https://repository.jboss.org/org/wildfly/wildfly-dist/26.0.0.Final/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The WildFly 26 documentation is available at the &lt;a href=&quot;https://docs.wildfly.org/26/&quot;&gt;docs.wildfly.org site&lt;/a&gt;. The WildFly 26 management API documentation is in the &lt;a href=&quot;https://docs.wildfly.org/26/wildscribe&quot;&gt;wildscribe section of the WildFly 26 docs&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;jira-release-notes&quot;&gt;Jira Release Notes&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The full list of issues resolved is available &lt;a href=&quot;https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12313721&amp;amp;version=12378513&quot;&gt;in the WFLY JIRA project&lt;/a&gt;. Issues resolved in the WildFly Core 18 release included with WildFly 26 are available &lt;a href=&quot;https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12315422&amp;amp;version=12378491&quot;&gt;in the WFCORE JIRA project&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;enjoy&quot;&gt;Enjoy!&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thank you for your continued support of WildFly.  We&amp;#8217;d love to hear your feedback at the &lt;a href=&quot;https://groups.google.com/forum/#!forum/wildfly&quot;&gt;WildFly forum&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+        <name>Brian Stansberry</name>
+        
+        
+      </author>
+
+      
+        
+      
+
+      
+        <category term="announcement" />
+      
+        <category term="release" />
+      
+        <category term="microprofile" />
+      
+        <category term="jakartaee" />
+      
+
+      
+        <summary type="html">I&amp;#8217;m pleased to announce that the WildFly 26 Final zip is now available for download.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">WildFly 26 S2I images have been released on quay.io</title>
+      <link href="https://wildfly.org//news/2021/12/16/WildFly-s2i-26-Released/" rel="alternate" type="text/html" title="WildFly 26 S2I images have been released on quay.io" />
+      <published>2021-12-16T00:00:00+00:00</published>
+      <updated>2021-12-16T00:00:00+00:00</updated>
+      <id>https://wildfly.org//news/2021/12/16/WildFly-s2i-26-Released</id>
+      
+      
+        <content type="html" xml:base="https://wildfly.org//news/2021/12/16/WildFly-s2i-26-Released/">&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;wildfly-26-s2i-docker-images&quot;&gt;WildFly 26 S2I Docker images&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The WildFly S2I (Source-to-Image) builder and runtime Docker images for WildFly 26
+have been released on &lt;a href=&quot;https://quay.io/organization/wildfly&quot;&gt;quay.io/wildfly&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For complete documentation on how to use these images using S2I, OpenShift and Docker,
+refer to the WildFly S2I &lt;a href=&quot;https://github.com/wildfly/wildfly-s2i/blob/master/README.md&quot;&gt;README&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;anticipating-a-future-set-of-wildfly-images&quot;&gt;Anticipating a future set of WildFly images&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The &lt;code&gt;quay.io/wildfly/wildfly-centos7&lt;/code&gt; and &lt;code&gt;quay.io/wildfly/wildfly-runtime-centos7&lt;/code&gt; are now deprecated. When building or running the server, a
+deprecation notice is displayed in the console. We are planning to stop evolving these images in a future release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We are now starting our migration to the new WildFly S2I images. The new architecture is based on the
+&lt;a href=&quot;https://github.com/wildfly/wildfly-maven-plugin/&quot;&gt;WildFly Maven plugin 3.0&lt;/a&gt; and a new pair of docker images.
+A &lt;a href=&quot;https://www.wildfly.org/news/2021/10/29/wildfly-s2i-v2-overview/&quot;&gt;recent post&lt;/a&gt; has provided the details of this new approach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We are expecting that these new artifacts will become final by the next WildFly release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;new-vs-current-s2i-workflow&quot;&gt;New vs current S2I workflow&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The main difference with the current WildFly S2I image is that no more WildFly server is installed in the S2I builder image. A Galleon provisioning of the server
+is required during the S2I build phase.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are evolving the pom.xml of your application to use the WildFly Maven Plugin to package the server and your application,
+the provisioned server and  deployment are automatically installed in the generated image.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Although we strongly encourage you to evolve your pom file, the builder image offers a mode that allows you to build and deploy existing application
+with the new builder image. In order to initiate Galleon provisioning of the server during S2I build phase you need to set
+the following environment variables:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;GALLEON_PROVISION_FEATURE_PACKS&lt;/code&gt;=&amp;lt;WildFly Galleon feature-pack GAV[,additional Galleon feature-packs GAV]&amp;gt;.
+The WildFly Galleon feature-pack to provision a WildFly server (&lt;code&gt;org.wildfly:wildfly-galleon-pack:26.0.0.Final&lt;/code&gt;) must be the first
+feature-pack in the list. Then additional feature-packs can be provided. The feature-packs of interest in a cloud context (non exhaustive list) are:&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/wildfly-extras/wildfly-cloud-galleon-pack&quot;&gt;org.wildfly.cloud:wildfly-cloud-galleon-pack:1.0.0.Beta1&lt;/a&gt;:
+To provision the additional cloud content (mainly server configuration based on env variables).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/wildfly-extras/wildfly-datasources-galleon-pack&quot;&gt;org.wildfly:wildfly-datasources-galleon-pack:2.0.6.Final&lt;/a&gt;:
+To provision drivers and datasources.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;GALLEON_PROVISION_LAYERS&lt;/code&gt;=&amp;lt;comma separated list of Galleon layers&amp;gt;.
+The set of &lt;a href=&quot;https://docs.wildfly.org/26/Galleon_Guide.html#wildfly_layers&quot;&gt;WildFly Galleon layers&lt;/a&gt; or Galleon layers
+provided by listed additional Galleon feature-packs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;These environment variables are not new, they are already used to initiate the provisioning of a custom WildFly server.
+With the new S2I builder image, if you are not using the WildFly Maven plugin, they must be set.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;to-conclude&quot;&gt;To conclude&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;While we are progressing to complete the transition (mainly documentation and release of final artifacts),
+we would really appreciate your feedback. (You can log these as new &lt;a href=&quot;https://github.com/wildfly/wildfly-s2i/issues&quot;&gt;project issues&lt;/a&gt;).
+This will help us evolve the WildFly S2I experience in the right direction.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thank-you!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;JF Denise&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+        <name>Jean-François Denise</name>
+        
+        
+      </author>
+
+      
+        
+      
+
+      
+        <category term="wildfly" />
+      
+        <category term="galleon" />
+      
+
+      
+        <summary type="html">WildFly 26 S2I Docker images</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">WildFly Impact of the Apache Log4j Security Vulnerabilities</title>
+      <link href="https://wildfly.org//news/2021/12/13/Log4j-CVEs/" rel="alternate" type="text/html" title="WildFly Impact of the Apache Log4j Security Vulnerabilities" />
+      <published>2021-12-13T00:00:00+00:00</published>
+      <updated>2021-12-13T00:00:00+00:00</updated>
+      <id>https://wildfly.org//news/2021/12/13/Log4j-CVEs</id>
+      
+      
+        <content type="html" xml:base="https://wildfly.org//news/2021/12/13/Log4j-CVEs/">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;WildFly users are of course interested in the impact of the recently disclosed security vulnerabilities related to Apache Log4j. On Friday the @WildFlyAS Twitter account &lt;a href=&quot;https://twitter.com/WildFlyAS/status/1469362190536818688&quot;&gt;tweeted a tl;dr; summary of how the critical impact CVE-2021-44228 vulnerability affects WildFly&lt;/a&gt;. In this post I want to provide further details, information on how users who package the log4j-core artifact in their WildFly application deployments can mitigate the risk, and provide information on how the &lt;a href=&quot;https://access.redhat.com/security/cve/CVE-2021-4104&quot;&gt;recently disclosed moderate Log4j 1 vulnerability&lt;/a&gt; affects WildFly.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;cve-2021-44228&quot;&gt;CVE-2021-44228&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://nvd.nist.gov/vuln/detail/CVE-2021-44228&quot;&gt;CVE-2021-44228&lt;/a&gt; is a critical impact zero-day vulnerability in the Apache Log4j log4j-core library whereby a remote attacker who can control log messages or log message parameters can execute arbitrary code on a server via a JNDI lookup.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I won&amp;#8217;t get into the technical details of the exploit here; instead I refer you to &lt;a href=&quot;https://www.lunasec.io/docs/blog/log4j-zero-day/&quot;&gt;this nice writeup on it&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This vulnerability is in code in the Log4j 2 &lt;code&gt;org.apache.logging.log4j:log4j-core&lt;/code&gt; artifact.  &lt;strong&gt;The WildFly application server project does not ship this artifact, and it never has.&lt;/strong&gt; So, the only way an application running on WildFly would be vulnerable to the CVE-2021-44228 vulnerability is if the log4j-core artifact has been added to the server installation, either via a user-provided JBoss Modules module, or more likely by packaging log4j-core in an application deployment artifact.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Note that since WildFly 22, WildFly does ship the Log4j 2 &lt;code&gt;org.apache.logging.log4j:log4j-api&lt;/code&gt; artifact, and up to WildFly 26.0.0.Beta1 the version of that artifact matches the CVE-2021-44228 CPE. However, &lt;em&gt;the log4j-api artifact does not contain the vulnerable code.&lt;/em&gt;. Note that even though the artifact on WildFly 26.0.0.Beta1 does not have the vulnerability, to help avoid confusion the upcoming 26.0.0.Final release will move to the 2.15.0 version of the artifact, which does not match the CVE-2021-44228 CPE.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;mitigation-strategies&quot;&gt;Mitigation Strategies&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If your application does include the log4j-core artifact, the following are steps you can take to mitigate any vulnerability:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;set-formatmsgnolookupstrue&quot;&gt;Set &lt;code&gt;formatMsgNoLookups=true&lt;/code&gt;&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Since its 2.10 release, Log4j provides a configuration option that lets you turn off the JNDI lookup behavior that results in the vulnerability.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To use this, update the &lt;code&gt;$WILDFLY_HOME/bin/standalone.conf&lt;/code&gt; or &lt;code&gt;$WILDFLY_HOME/bin/domain.conf&lt;/code&gt; file (or, for Windows users, the &lt;code&gt;.bat&lt;/code&gt; or &lt;code&gt;.ps1&lt;/code&gt; variants of those) to add &lt;code&gt;-Dlog4j2.formatMsgNoLookups=true&lt;/code&gt; to the value of the &lt;code&gt;JAVA_OPTS&lt;/code&gt; environment variable. (Which file you update depends on whether you are running a standalone server or a domain mode host.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Note that if you are using a version of log4j-core prior to 2.10 this will have no effect.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;re on a recent enough log4j-core version setting this is the quickest mitigation, but whether you can use it or not as soon as you can you should also&amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;upgrade-log4j-core-to-the-2-15-0-or-later-release&quot;&gt;Upgrade log4j-core to the 2.15.0 or later release&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache Log4j project has &lt;a href=&quot;https://logging.apache.org/log4j/2.x/download.html&quot;&gt;released a 2.15.0 version&lt;/a&gt; that fixes the flaw. If you are packaging log4j-core in your application we recommend updating your deployment artifact to 2.15.0 or later as soon as possible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Note that I&amp;#8217;ve seen user reports that upgrading to 2.15.0 in a deployment is problematic when the container is providing an earlier release of the log4j-api artifact. This should not be a problem if you are following the &lt;a href=&quot;https://docs.wildfly.org/25/Admin_Guide.html#how-do-i-log4j2&quot;&gt;documentation for how to incorporate log4j-core in your application&lt;/a&gt;. If you are packaging log4j-core, you should exclude any module dependency on the log4-api provided by WildFly and instead package log4j-api in your deployment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;cve-2021-4104&quot;&gt;CVE-2021-4104&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Recently Red Hat &lt;a href=&quot;https://access.redhat.com/security/cve/CVE-2021-4104&quot;&gt;reported another security vulnerability affecting Apache Log4j&lt;/a&gt;, in this case Log4j 1. They rated the impact of this vulnerability as &quot;Moderate impact&quot;, unlike their &lt;a href=&quot;https://access.redhat.com/security/cve/CVE-2021-44228&quot;&gt;view of CVE-2021-44228&lt;/a&gt; which was rated as &quot;Critical impact&quot;. (For more on the difference between &quot;Critical&quot; and &quot;Moderate&quot;, see &lt;a href=&quot;https://access.redhat.com/security/updates/classification/&quot;&gt;Red Hat&amp;#8217;s severity ratings documentation&lt;/a&gt;.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;CVE-2021-4104 has some surface similarity to CVE-2021-44228, in that both relate to a logging library doing a JNDI lookup, with a risk that that library could be fooled into doing a lookup and deserialization of content from an untrustworthy source. In the CVE-2021-4104 case the lookups can be performed by the &lt;code&gt;org.apache.log4j.net.JMSAppender&lt;/code&gt; class, a class that is used if an application configures a log appender meant to write to an external JMS topic. The &lt;code&gt;JMSAppender&lt;/code&gt; lookup is quite different from the CVE-2021-44228 one though, in that the name being looked up is meant to be of a string provided as part of the appender&amp;#8217;s configuration, not one that is incorporated in a log message. It is significantly easier to get a server to inject a malicious string into a log message than it is to inject one into the container configuration. The latter would typically require some sort of privileged access to the server. This increased difficulty of exploit is one of the &lt;a href=&quot;https://access.redhat.com/security/updates/classification/&quot;&gt;factors that Red Hat uses&lt;/a&gt; when deciding the severity of a vulnerability.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;WildFly does not ship Apache Log4j 1 itself, but the &lt;code&gt;org.jboss.logmanager:log4j-jboss-logmanager&lt;/code&gt; artifact we ship shades the Log4j 1 classes, including &lt;code&gt;JMSAppender&lt;/code&gt;. &lt;code&gt;JMSAppender&lt;/code&gt; has been present in WildFly or JBoss AS at least as far back as JBoss AS 7.1, and probably much farther.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;However, our attempts to configure WildFly to use the JMSAppender have been unsuccessful, failing before the JMSAppender code reaches a point where it does any JNDI lookup. This is because the JBoss Modules module that packages &lt;code&gt;org.jboss.logmanager:log4j-jboss-logmanager&lt;/code&gt; does not include a dependency on the module that provides the &lt;code&gt;javax.naming&lt;/code&gt; package, resulting in a ClassNotFoundException if the class is used. So at this point we don&amp;#8217;t see an exploit involving normal modular use of the &lt;code&gt;org.jboss.logmanager:log4j-jboss-logmanager&lt;/code&gt; artifact we ship. Exploits would likely require the use of reflection.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you package Apache Log4j 1 in your application, be careful not to expose to untrusted callers any mechanism that would allow them to access the &lt;code&gt;JMSAppender&lt;/code&gt; class or configure instances of it. Which is the right thing to do in general! Running with the JVM security manager enabled is another way to defend against attacks based on getting your application to make unexpected calls to external systems.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you have any questions about any of the above, I encourage you to ask on the &lt;a href=&quot;https://groups.google.com/g/wildfly&quot;&gt;WildFly forums&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Best regards,&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Brian&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+        <name>Brian Stansberry</name>
+        
+        
+      </author>
+
+      
+        
+      
+
+      
+        <category term="security" />
+      
+        <category term="CVE" />
+      
+
+      
+        <summary type="html">WildFly users are of course interested in the impact of the recently disclosed security vulnerabilities related to Apache Log4j. On Friday the @WildFlyAS Twitter account tweeted a tl;dr; summary of how the critical impact CVE-2021-44228 vulnerability affects WildFly. In this post I want to provide further details, information on how users who package the log4j-core artifact in their WildFly application deployments can mitigate the risk, and provide information on how the recently disclosed moderate Log4j 1 vulnerability affects WildFly.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">WildFly 26 Beta1 is released!</title>
+      <link href="https://wildfly.org//news/2021/12/02/WildFly26-Beta-Released/" rel="alternate" type="text/html" title="WildFly 26 Beta1 is released!" />
+      <published>2021-12-02T00:00:00+00:00</published>
+      <updated>2021-12-02T00:00:00+00:00</updated>
+      <id>https://wildfly.org//news/2021/12/02/WildFly26-Beta-Released</id>
+      
+      
+        <content type="html" xml:base="https://wildfly.org//news/2021/12/02/WildFly26-Beta-Released/">&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m pleased to announce that the new WildFly and WildFly Preview 26.0.0.Beta1 releases are available for download at &lt;a href=&quot;https://wildfly.org/downloads&quot; class=&quot;bare&quot;&gt;https://wildfly.org/downloads&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For more information about the changes included in this release please consult the release notes, in the meantime the
+developers are working hard on tasks needed to prepare the base to add support for Jakarta EE 10 as the specifications
+become available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;release-notes&quot;&gt;Release Notes&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The release notes for the release are &lt;a href=&quot;https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12313721&amp;amp;version=12374338&quot;&gt;here&lt;/a&gt;, with issues fixed in the underlying WildFly Core betas listed &lt;a href=&quot;https://issues.redhat.com/issues/?jql=project%20%3D%20%22WildFly%20Core%22%20and%20fixVersion%20in%20(18.0.0.Beta1%2C%2018.0.0.Beta2%2C%2018.0.0.Beta3%2C%2018.0.0.Beta4%2C%2018.0.0.Beta5)&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Please try it out and give us your feedback, while we get to work on WildFly 26 Final!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Best regards,&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Darran&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+        <name>Darran Lofthouse</name>
+        
+        
+      </author>
+
+      
+        
+      
+
+      
+        <category term="announcement" />
+      
+        <category term="release" />
+      
+
+      
+        <summary type="html">I&amp;#8217;m pleased to announce that the new WildFly and WildFly Preview 26.0.0.Beta1 releases are available for download at https://wildfly.org/downloads.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">WildFly 25.0.1 is released!</title>
+      <link href="https://wildfly.org//news/2021/11/04/WildFly2501-Released/" rel="alternate" type="text/html" title="WildFly 25.0.1 is released!" />
+      <published>2021-11-04T00:00:00+00:00</published>
+      <updated>2021-11-04T00:00:00+00:00</updated>
+      <id>https://wildfly.org//news/2021/11/04/WildFly2501-Released</id>
+      
+      
+        <content type="html" xml:base="https://wildfly.org//news/2021/11/04/WildFly2501-Released/">&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;WildFly 25.0.1.Final is now available &lt;a href=&quot;https://wildfly.org/downloads&quot;&gt;for download&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It&amp;#8217;s been about four weeks since the WildFly 25 release, so we&amp;#8217;ve done a small bug fix update, WildFly 25.0.1. This includes an update to WildFly Preview.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The full list of issues resolved in WildFly 25.0.1 is available &lt;a href=&quot;https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12313721&amp;amp;version=12375434&quot;&gt;here&lt;/a&gt;. Issues resolved in the WildFly Core updates (there were two) included with WildFly 25.0.1 are available &lt;a href=&quot;https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12315422&amp;amp;version=12375622&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://issues.redhat.com/secure/ReleaseNote.jspa?projectId=12315422&amp;amp;version=12377083&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;/div&gt;</content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+        <name>Kabir Khan</name>
+        
+        
+      </author>
+
+      
+        
+      
+
+      
+        <category term="announcement" />
+      
+        <category term="release" />
+      
+
+      
+        <summary type="html">WildFly 25.0.1.Final is now available for download.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">WildFly S2I v2 architecture overview</title>
+      <link href="https://wildfly.org//news/2021/10/29/wildfly-s2i-v2-overview/" rel="alternate" type="text/html" title="WildFly S2I v2 architecture overview" />
+      <published>2021-10-29T00:00:00+00:00</published>
+      <updated>2021-10-29T00:00:00+00:00</updated>
+      <id>https://wildfly.org//news/2021/10/29/wildfly-s2i-v2-overview</id>
+      
+      
+        <content type="html" xml:base="https://wildfly.org//news/2021/10/29/wildfly-s2i-v2-overview/">&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For upcoming &lt;a href=&quot;http://docs.wildfly.org&quot;&gt;WildFly&lt;/a&gt; 26 release we are re-architecting &lt;a href=&quot;https://github.com/wildfly/wildfly-s2i/&quot;&gt;WildFly S2I (Source to Image)&lt;/a&gt;
+images to offer more flexibility, better efficiency and a simpler user experience.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Since WildFly 16, in which we introduced an evolution of the WildFly s2i images, we have identified a set of pain points
+that we want to see addressed in a new architecture:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Strong coupling of the WildFly S2I builder image with a WildFly release. This implies that new builder images have
+to be released and deployed for each new server version.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configuring the server during the S2I build is complex. Executing the simplest WildFly CLI script during build is far from trivial;
+it requires your application project to comply with a specific directory structure then you must define bash
+scripts (do you know Java developers who like to write bash scripts?) in order to call CLI command lines (and don&amp;#8217;t forget to start the embedded server).
+The simplest copy of some extra server content (e.g. JBoss Module modules) is also not that trivial and again requires bash scripting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Executing your own CLI scripts during server startup implies having installed some extensions (again bash scripts) inside the server during the S2I build.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Server startup is always composed of a sequence of 2 steps&amp;#8201;&amp;#8212;&amp;#8201;server starts first in admin only mode and automatically applies
+generated CLI scripts, then reboots in normal mode. In cases your server configuration doesn&amp;#8217;t require some adjustments
+and could have booted directly in normal mode.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No simple way to provide server arguments (e.g. Java system properties) when starting the server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No way to tailor a server according to the application needs from the project &lt;code&gt;pom.xml&lt;/code&gt; file. Server provisioning during the S2I build is configured
+by env variables provided at S2I build time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No way to build and run an application with a &lt;a href=&quot;https://docs.wildfly.org/25/WildFly_and_WildFly_Preview.html&quot;&gt;WildFly Preview&lt;/a&gt; server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WildFly S2I images contain much more than what we actually need to build and run the server. We need a much lighter Operating System.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;new-wildfly-s2i-architecture&quot;&gt;New WildFly S2I architecture&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The current architecture is composed of 2 main artifacts:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;WildFly S2I builder image with JDK11 based on centos7. Image released for each new WildFly release (to contain the latest release of the WildFly server).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WildFly S2I runtime image with JDK11 based on centos7. Image used to create docker chained builds to output smaller runtime application images.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We are keeping the separation between the S2I builder image and the runtime image. The 2 new images we are offering are:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;WildFly S2I builder image with JDK11 based on
+&lt;a href=&quot;https://catalog.redhat.com/software/containers/ubi8/ubi-minimal/5c359a62bed8bd75a2c3fba8&quot;&gt;ubi8 minimal&lt;/a&gt;.
+This image doesn&amp;#8217;t contain a WildFly server. It expects a server containing the application deployment to be provisioned during the S2I build phase.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WildFly runtime image with JDK11 based on
+&lt;a href=&quot;https://catalog.redhat.com/software/containers/ubi8/ubi-minimal/5c359a62bed8bd75a2c3fba8&quot;&gt;ubi8 minimal&lt;/a&gt;.
+We are keeping the JDK (instead of a JRE) in order to make Java debugging tools available in the image.
+This image can be used to run any WildFly server (not only a server provisioned using the builder image in a chained build).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For now we will only be providing JDK 11 versions of these images.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;So the WildFly S2I builder image becomes a lightweight generic image allowing to build and execute applications deployed in any WildFly server.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;new-s2i-build-workflow&quot;&gt;New s2i build workflow&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We are removing the complex server configuration points and rely on the use of the
+&lt;a href=&quot;https://github.com/wildfly/wildfly-maven-plugin/&quot;&gt;WildFly Maven plugin&lt;/a&gt; that can now provision a fully configured server containing your deployment.
+The WildFly Maven plugin &lt;code&gt;3.0.0.Alpha1&lt;/code&gt; has been evolved with some new goals to provision, configure, and package the server and the deployment in one step.
+When designing your application pom file, add the WildFly Maven plugin &lt;code&gt;package&lt;/code&gt; goal, configure it with the &lt;a href=&quot;https://docs.wildfly.org/25/Galleon_Guide.html#wildfly-galleon-feature-packs&quot;&gt;WildFly Galleon feature-pack&lt;/a&gt;
+and &lt;a href=&quot;https://docs.wildfly.org/25/Galleon_Guide.html#wildfly_layers&quot;&gt;Galleon layer(s)&lt;/a&gt;, and optionally reference WildFly CLI scripts to be executed and
+content to be copied inside the server. At the end of the build you will get (by default in the &lt;code&gt;target/server&lt;/code&gt; directory)
+a server with your app deployed, ready to be installed in the image.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In order to allow for a smooth transition to the new images, we are still supporting (in a deprecated way) the legacy workflow.
+Your existing application would work, but you are now required to specify the Galleon feature-pack(s) and layer(s)
+(&lt;code&gt;GALLEON_PROVISION_FEATURE_PACKS&lt;/code&gt; and &lt;code&gt;GALLEON_PROVISION_LAYERS&lt;/code&gt; env variables)
+you want to see used during the S2I build to provision a WildFly server.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;new-image-runtime-api&quot;&gt;New image runtime API&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;An image built from the WildFly S2I builder or runtime images both expose
+the same API allowing you to fine tune the server execution.
+This API is exposed by means of environment variables to be set when configuring your deployment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;jvm-configuration-api&quot;&gt;JVM configuration API&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The JVM &lt;a href=&quot;https://github.com/jboss-openshift/cct_module/tree/master/jboss/container/java/jvm/api/module.yaml&quot;&gt;env variables&lt;/a&gt;
+that are used today with WildFly s2i images are still supported. They are a nice way to tune the JVM.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;wildfly-server-startup-configuration-api&quot;&gt;WildFly server startup configuration API&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The new server startup configuration API is described in this
+&lt;a href=&quot;https://github.com/wildfly/wildfly-cekit-modules/blob/v2/jboss/container/wildfly/run/api/module.yaml&quot;&gt;documentation&lt;/a&gt;.
+This API comes with default values that should cover the main use-cases. 2 env variables open-up new possibilities:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;SERVER_ARGS&lt;/code&gt; allows you to pass WildFly server arguments when starting the server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;CLI_LAUNCH_SCRIPT&lt;/code&gt; allows you to provide a path (relative to &lt;code&gt;JBOSS_HOME&lt;/code&gt; or absolute) to a CLI script to be executed at startup time. Although CLI scripts
+should be executed at build time from the WildFly Maven plugin, in some cases it can be useful to adjust the configuration at execution time. You can package
+a set of CLI scripts inside your server at build time, then reference one of these CLI scripts to be executed at runtime.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;wildfly-server-subsystems-configuration-api&quot;&gt;WildFly server subsystems configuration API&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are using WildFly s2i images you are perhaps asking yourself where are the env variables you have been using
+to configure the elytron subsystem, to add datasources, to configure logging or the microprofile-config subsystem,&amp;#8230;&amp;#8203;
+They are provided by means of a new &lt;a href=&quot;https://github.com/wildfly-extras/wildfly-cloud-galleon-pack&quot;&gt;WildFly cloud Galleon feature-pack&lt;/a&gt;
+that you can combine with the WildFly Galleon feature-pack at build time to produce a server supporting these env variables.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you only provision &lt;code&gt;org.wildfly:wildfly-galleon-pack:25.0.0.Final&lt;/code&gt; you will get a &quot;vanilla&quot; WildFly server that
+will get lightly adjusted by the image entry-point to properly execute on OpenShift.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you provision &lt;code&gt;org.wildfly:wildfly-galleon-pack:25.0.0.Final&lt;/code&gt; and &lt;code&gt;org.wildfly.cloud:wildfly-cloud-galleon-pack:1.0.0.Alpha2&lt;/code&gt;
+you will get a similar server to the one present in the current WildFly s2i image (with &lt;code&gt;JBOSS_HOME/bin/openshift-launch.sh&lt;/code&gt; launcher).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;examples&quot;&gt;Examples&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can pull the new WildFly S2i images (Beta quality) from quay.io:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker pull quay.io/jfdenise/wildfly-s2i-jdk11&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;docker pull quay.io/jfdenise/wildfly-runtime-jdk11&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;NB: The images will be made available from the &lt;code&gt;quay.io/wildfly&lt;/code&gt; organisation when they reach a Final quality.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;s2i-examples&quot;&gt;S2I examples&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We have defined a set of &lt;a href=&quot;https://github.com/wildfly/wildfly-s2i/tree/v2/examples&quot;&gt;examples&lt;/a&gt; to help
+you get started. They cover different use-cases that highlight the new capabilities.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The examples rely on &lt;a href=&quot;https://www.wildfly.org/news/2021/05/05/helm-charts-for-wildfly/&quot;&gt;WildFly Helm Charts&lt;/a&gt;
+to automate the build and deployment on OpenShift.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In order to deploy the examples onto OpenShift, you can log in to the
+&lt;a href=&quot;https://developers.redhat.com/developer-sandbox/&quot;&gt;Developer Sandbox for Red Hat OpenShift&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The use cases covered are:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/wildfly/wildfly-s2i/tree/v2/examples/jsf-ejb-jpa/README.md&quot;&gt;Simple application&lt;/a&gt;, no specific configuration. Just build and deploy on OpenShift.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/wildfly/wildfly-s2i/tree/v2/examples/elytron-oidc-client/README.md&quot;&gt;Keycloak integration&lt;/a&gt;. Use WildFly 25 &lt;code&gt;elytron-oidc-client&lt;/code&gt;
+to interact with a Keycloak server. Also highlights the ability to provide server arguments at launch time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/wildfly/wildfly-s2i/tree/v2/examples/logging/README.md&quot;&gt;Logging&lt;/a&gt;. We all need to enable logging at some point.
+With a simple CLI script executed at server boot time, enable logging and redirect all traces to the CONSOLE.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/wildfly/wildfly-s2i/tree/v2/examples/web-clustering/README.md&quot;&gt;Clustering&lt;/a&gt;. A cluster of PODS
+that share web sessions. This example benefits from the WildFly cloud feature-pack and WildFly Helm Charts capabilities
+to automatically enable the &lt;code&gt;dns.DNS_PING&lt;/code&gt; JGroups protocol and generate the ping service.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;dockerfile-example&quot;&gt;Dockerfile example&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This chapter highlights the steps to build a docker image that contains the server and your application,
+publish it in a public docker registry in which you have an account (e.g. &lt;a href=&quot;http://quay.io&quot;&gt;quay.io&lt;/a&gt;) and then deploy it on OpenShift.
+Here we are using the &lt;a href=&quot;https://github.com/wildfly/wildfly-s2i/tree/v2/examples/jsf-ejb-jpa/README.md&quot;&gt;Simple application&lt;/a&gt; example.
+NB: Be sure to update the example steps with your own docker registry account.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Build the maven project:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;code&gt;
+$ mvn clean package
+&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Write a Dockerfile with the following content:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;FROM quay.io/jfdenise/wildfly-runtime-jdk11:latest
+COPY --chown=jboss:root target/server $JBOSS_HOME
+RUN chmod -R ug+rwX $JBOSS_HOME&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Build the image&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;code&gt;
+$ docker build -t quay.io/jfdenise/my-app:latest .
+&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can run the image locally and interact with the application (e.g. &lt;a href=&quot;http://docker_container_IP:8080&quot; class=&quot;bare&quot;&gt;http://docker_container_IP:8080&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;code&gt;
+$ docker run --rm quay.io/jfdenise/my-app:latest
+&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Publish the image&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;code&gt;
+$ docker push quay.io/jfdenise/my-app:latest
+&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Write a WildFly Helm Charts &lt;code&gt;my-app.yaml&lt;/code&gt; file with the following content:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;image:
+  name: quay.io/jfdenise/my-app
+build:
+  enabled: false&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Deploy on OpenShift&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;code&gt;
+helm install my-app -f my-app.yaml wildfly_v2/wildfly
+&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Once deployed, access the application route URL (e.g. &lt;a href=&quot;https://my-app-jdenise-stage.apps.sandbox.x8i5.p1.openshiftapps.com/&quot; class=&quot;bare&quot;&gt;https://my-app-jdenise-stage.apps.sandbox.x8i5.p1.openshiftapps.com/&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;to-conclude&quot;&gt;To conclude&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We hope that, like us, you will see the benefits of this new approach (for which you can perhaps find similarities
+with the &lt;a href=&quot;https://github.com/wildfly-extras/wildfly-jar-maven-plugin/&quot;&gt;WildFly bootable JAR&lt;/a&gt; S2I experience).
+This is going to allow us to offer more flexibility (provision the server of your choice), better efficiency (smaller images, faster server startup),
+simpler user experience (WildFly Maven plugin configuration is far simpler than the existing S2I configuration points).
+So in the end a much better overall experience.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Keep us posted with your feedback. (You can log these as new
+&lt;a href=&quot;https://github.com/wildfly/wildfly-s2i/issues&quot;&gt;project issues&lt;/a&gt;.) This will help us evolve the new WildFly S2I experience in the right direction.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thank-you!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;JF Denise&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+        <name>Jean-François Denise</name>
+        
+        
+      </author>
+
+      
+        
+      
+
+      
+        <category term="wildfly" />
+      
+        <category term="galleon" />
+      
+        <category term="wildfly-s2i" />
+      
+        <category term="s2i" />
+      
+
+      
+        <summary type="html">For upcoming WildFly 26 release we are re-architecting WildFly S2I (Source to Image) images to offer more flexibility, better efficiency and a simpler user experience.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Using distributed realm in WildFly Elytron</title>
+      <link href="https://wildfly-security.github.io/wildfly-elytron/blog/distributed-realm/" rel="alternate" type="text/html" title="Using distributed realm in WildFly Elytron" />
+      <published>2021-10-26T00:00:00+00:00</published>
+      <updated>2021-10-26T00:00:00+00:00</updated>
+      <id>https://wildfly-security.github.io/wildfly-elytron/blog/distributed-realm/</id>
+      
+      
+        <content type="html" xml:base="https://wildfly-security.github.io/wildfly-elytron/blog/distributed-realm/"></content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+        <name>Diana Krepinska Vilkolakova</name>
+        
+        
+      </author>
+
+      
+        
+      
+
+      
+        <category term="elytron" />
+      
+        <category term="wildfly" />
+      
+        <category term="security" />
+      
+        <category term="distributed" />
+      
+        <category term="realm" />
+      
+        <category term="filesystem" />
+      
+
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Using failover realm in WildFly Elytron</title>
+      <link href="https://wildfly-security.github.io/wildfly-elytron/blog/failover-realm/" rel="alternate" type="text/html" title="Using failover realm in WildFly Elytron" />
+      <published>2021-10-25T00:00:00+00:00</published>
+      <updated>2021-10-25T00:00:00+00:00</updated>
+      <id>https://wildfly-security.github.io/wildfly-elytron/blog/failover-realm/</id>
+      
+      
+        <content type="html" xml:base="https://wildfly-security.github.io/wildfly-elytron/blog/failover-realm/"></content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+        <name>Diana Krepinska Vilkolakova</name>
+        
+        
+      </author>
+
+      
+        
+      
+
+      
+        <category term="elytron" />
+      
+        <category term="wildfly" />
+      
+        <category term="security" />
+      
+        <category term="failover" />
+      
+        <category term="realm" />
+      
+        <category term="ldap" />
+      
+
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Open Source Day 2021 Recap</title>
+      <link href="https://wildfly-security.github.io/wildfly-elytron/blog/open-source-day-recap/" rel="alternate" type="text/html" title="Open Source Day 2021 Recap" />
+      <published>2021-10-18T00:00:00+00:00</published>
+      <updated>2021-10-18T00:00:00+00:00</updated>
+      <id>https://wildfly-security.github.io/wildfly-elytron/blog/open-source-day-recap/</id>
+      
+      
+        <content type="html" xml:base="https://wildfly-security.github.io/wildfly-elytron/blog/open-source-day-recap/"></content>
+      
+
+      
+      
+      
+      
+      
+
+      <author>
+        <name>Farah Juma</name>
+        
+        
+      </author>
+
+      
+        
+      
+
+      
+        <category term="elytron" />
+      
+        <category term="wildfly" />
+      
+        <category term="security" />
+      
+        <category term="opensource" />
+      
+
+      
+
+      
+      
+    </entry>
+  
+
+</feed>
+
